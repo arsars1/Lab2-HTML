@@ -1,31 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <title>Автобіографія Свистуна Арсенія Олександровича</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        #index {
+            font-style: italic;
+        }
+
+        #content {
+            text-align: center;
+        }
+        .menu {
+            display: block;
+            width: 180px;
+            padding: 10px;
+            border: 2px solid black;
+            background: blue;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu:visited {
+            background: blue;
+            color: white;
+        }
+
+        .menu:hover {
+            background: magenta;
+            color: white;
+        }
+
+        .menu:active {
+            background: yellow;
+            color: black;
+        }
+
+        article {
+            font-size: 120%;
+        }
+
+        article h2 {
+            font-size: 120%;
+        }
+      article:nth-of-type(1) p {
+         background: lightblue;
+         color: darkblue;
+        }
+        article:nth-of-type(2) p {
+            background: lightgreen;
+            color: darkgreen;
+        }
+        article:nth-of-type(3) p {
+            background: lightseagreen;
+            color: black;
+        }
+        article:nth-of-type(4) p {
+            background: lightpink;
+            color: darkred;
+        }
+        article:nth-of-type(5) p {
+            background: bisque;
+            color: maroon;
+        }
+        article p {
+            padding: 10px;
+        }
+
+        article a {
+            font-weight: bold;
+        }
+
+        #up {
+            text-transform: uppercase;
+        }
+    </style>
 </head>
+
 <body>
 
     <h1 id="top">Автобіографія Свистуна Арсенія Олександровича</h1>
 
-    <a href="index.html">Назад на головну</a>
+    <a id="index" href="index.html">Назад на головну</a>
     <br>
 
     <h3 id="content">Зміст</h3>
 
-    <a href="#basic">Базова інформація</a>
+    <a class="menu" href="#basic">Базова інформація</a>
     <br>
 
-    <a href="#childhood">Дитинство</a>
+    <a class="menu" href="#childhood">Дитинство</a>
     <br>
 
-    <a href="#school">Шкільні роки</a>
+    <a class="menu" href="#school">Шкільні роки</a>
     <br>
 
-    <a href="#outside">Поза школою</a>
+    <a class="menu" href="#outside">Поза школою</a>
     <br>
 
-    <a href="#uni">Університет</a>
+    <a class="menu" href="#uni">Університет</a>
     <br>
 
     <article>
@@ -105,7 +184,7 @@
 
     <hr>
 
-    <a href="#top">Уверх</a>
+    <a id="up" href="#top">Уверх</a>
 
 </body>
 </html>
