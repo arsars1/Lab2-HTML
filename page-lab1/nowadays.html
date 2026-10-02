@@ -1,17 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <title>Сьогодення Свистуна Арсенія Олександровича</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        #index {
+            font-style: italic;
+        }
+
+        #shopping
+        {
+            text-align: center;
+        }
+
+        ul>li:nth-child(odd) {
+            background: gray;
+        }
+
+        ul>li:nth-child(even) {
+            background: white;
+        }
+
+        #dessert
+        {
+            text-align: center;
+        }
+        ol li:nth-child(3):hover,ol li:nth-child(5):hover {
+            cursor: pointer;
+        }
+        ol li:nth-child(4) {
+            background: papayawhip;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Сьогодення Свистуна Арсенія Олександровича</h1>
 
-    <a href="index.html">Назад на головну</a>
+    <a id="index" href="index.html">Назад на головну</a>
     <br>
 
-    <h2>Мій типовий список покупок</h2>
+    <h2 id="shopping" >Мій типовий список покупок</h2>
 
     <ul>
         <li>
@@ -44,7 +79,7 @@
 
     <br>
 
-    <h2>Мій улюблений десерт</h2>
+    <h2 id="dessert">Мій улюблений десерт</h2>
 
     <ol>
         <li>
