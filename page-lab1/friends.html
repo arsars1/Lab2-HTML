@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <title>Друзі Свистуна Арсенія Олександровича</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        #index {
+            font-style: italic;
+        }
+
+        #friends{
+            text-align: center;
+        }
+
+        #table-header th {
+            text-align: center;
+            background: green;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background: gray;
+        }
+
+        tbody tr:nth-child(even) {
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th:last-child,td:last-child {
+            text-align: right;
+        }
+
+    </style>
 </head>
 <body>
 
     <h1>Друзі Свистуна Арсенія Олександровича</h1>
 
-    <a href="index.html">Назад на головну</a>
+    <a id="index" href="index.html">Назад на головну</a>
     <br>
 
-    <h2>Мої друзі</h2>
+    <h2 id="friends">Мої друзі</h2>
 
     <table>
         <thead>
-            <tr>
+            <tr id="table-header">
                 <th>Прізвище</th>
                 <th>Ім'я</th>
                 <th>Дата народження</th>
